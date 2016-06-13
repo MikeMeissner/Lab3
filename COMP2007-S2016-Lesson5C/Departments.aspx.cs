@@ -21,7 +21,7 @@ namespace COMP2007_S2016_Lesson5C
             {
                 Session["SortColumn"] = "DepartmentID"; // default sort column
                 Session["SortDirection"] = "ASC";
-                // Get the student data
+                
                 this.GetDepartments();
             }
         }
@@ -36,6 +36,7 @@ namespace COMP2007_S2016_Lesson5C
                                 select allDepartments);
 
                 // bind the result to the GridView
+          
                 DepartmentsGridView.DataSource = Departments.AsQueryable().OrderBy(SortString).ToList();
                 DepartmentsGridView.DataBind();
             }
@@ -66,7 +67,7 @@ namespace COMP2007_S2016_Lesson5C
                                           where departmentRecords.DepartmentID == DepartmentID
                                           select departmentRecords).FirstOrDefault();
 
-                // remove the selected student from the db
+                
                 db.Departments.Remove(deletedDepartment);
 
                 // save my changes back to the database

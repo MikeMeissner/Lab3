@@ -9,7 +9,7 @@
                 <br />
                 <div class="form-group">
                     <label class="control-label" for="DepartmentNameTextBox">Department Name</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="DepartmenrNameTextBox" placeholder="Department Name" required="true"></asp:TextBox>
+                    <asp:TextBox runat="server" CssClass="form-control" ID="DepartmentNameTextBox" placeholder="Department Name" required="true"></asp:TextBox>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="DepartmentIDTextBox">Department ID</label>
@@ -17,7 +17,7 @@
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="BudgetTextBox">Budget</label>
-                    <asp:TextBox runat="server" TextMode="Date" CssClass="form-control" ID="BudgetTextBox" required="true"></asp:TextBox>
+                    <asp:TextBox runat="server" CssClass="form-control" ID="BudgetTextBox" placeholder="Budget" required="true"></asp:TextBox>
                     
                 </div>
                 <div class="text-right">
