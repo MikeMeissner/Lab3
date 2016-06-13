@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <h1>Departments List</h1>
 
-        <a href="DepartmentsDetails.aspx" class="btn btn-success btn-sm"><i class="fa fa-plus"></i>Add Student</a>
+        <a href="DepartmentsDetails.aspx" class="btn btn-success btn-sm"><i class="fa fa-plus"></i>Add Department</a>
 
                 <div>
                     <label for="PageSizeDropDownList">Records per Page: </label>
@@ -27,7 +27,7 @@
                     <Columns>
                         <asp:BoundField DataField="DepartmentID" HeaderText="Department ID" Visible="true" SortExpression="DepartmentID" />
                         <asp:BoundField DataField="Name" HeaderText="Department Name" Visible="true" SortExpression="Name" />
-                        <asp:BoundField DataField="Budget" HeaderText="Budget" Visible="true" SortExpression="Budget" />
+                        <asp:BoundField DataField="Budget" HeaderText="Budget" Visible="true" SortExpression="Budget" DataFormatString="{0:c}" />
                         <asp:HyperLinkField HeaderText="Edit" Text="<i class='fa fa-pencil-square-o fa-lg'></i> Edit" 
                             NavigateUrl="~/DepartmentsDetails.aspx.cs" ControlStyle-CssClass="btn btn-primary btn-sm" runat="server"
                             DataNavigateUrlFields="DepartmentID" DataNavigateUrlFormatString="DepartmentsDetails.aspx?DepartmentID={0}" />

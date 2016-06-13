@@ -36,9 +36,9 @@ namespace COMP2007_S2016_Lesson5C
                 // map the student properties to the form controls
                 if (updatedDepartment != null)
                 {
-                    DepartmentIDTextBox.Text = updatedDepartment.DepartmentID.ToString();
+                    //DepartmentIDTextBox.Text = updatedDepartment.DepartmentID.ToString();
                     DepartmentNameTextBox.Text = updatedDepartment.Name;
-                    BudgetTextBox.Text = updatedDepartment.Budget.ToString();
+                    BudgetTextBox.Text = updatedDepartment.Budget.ToString("c");
                 }
             }
         }
@@ -70,7 +70,7 @@ namespace COMP2007_S2016_Lesson5C
                 }
 
                 
-                newDepartment.DepartmentID = int.Parse(DepartmentIDTextBox.Text);
+                //newDepartment.DepartmentID = int.Parse(DepartmentIDTextBox.Text);
                 newDepartment.Name = DepartmentNameTextBox.Text;
                 newDepartment.Budget = Decimal.Parse(BudgetTextBox.Text);
 
