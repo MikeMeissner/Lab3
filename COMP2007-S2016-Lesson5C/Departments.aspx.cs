@@ -16,10 +16,10 @@ namespace COMP2007_S2016_Lesson5C
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            // if loading the page for the first time, populate the department grid
+            
             if (!IsPostBack)
             {
-                Session["SortColumn"] = "DepartmentID"; // default sort column
+                Session["SortColumn"] = "DepartmentID"; 
                 Session["SortDirection"] = "ASC";
                 
                 this.GetDepartments();
