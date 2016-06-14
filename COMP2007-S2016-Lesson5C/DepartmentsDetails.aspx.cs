@@ -72,7 +72,7 @@ namespace COMP2007_S2016_Lesson5C
                 
                 //newDepartment.DepartmentID = int.Parse(DepartmentIDTextBox.Text);
                 newDepartment.Name = DepartmentNameTextBox.Text;
-                newDepartment.Budget = Decimal.Parse(BudgetTextBox.Text);
+                newDepartment.Budget = Decimal.Parse(BudgetTextBox.Text,System.Globalization.NumberStyles.Currency);
 
                 // use LINQ to ADO.NET to add / insert new student into the database
 
